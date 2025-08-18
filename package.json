@@ -1,0 +1,27 @@
+{
+  "name": "aniver_lucas",
+  "version": "1.0.0",
+  "description": "",
+  "source": "src/scripts/main.js",
+  "scripts": {
+    "build": "parcel src/index.html src/styles/main.scss src/scripts/main.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LukasMarquess/Aniver_Lucas.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/LukasMarquess/Aniver_Lucas/issues"
+  },
+  "homepage": "https://github.com/LukasMarquess/Aniver_Lucas#readme",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.15.4",
+    "parcel": "^2.15.4",
+    "sharp": "^0.33.5"
+  }
+}
