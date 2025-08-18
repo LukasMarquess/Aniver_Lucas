@@ -1,3 +1,25 @@
-body{
-    background-color: rgb(19, 210, 32);
+@use "hero";
+@use "components/infos_bar";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+    color: #fff;
+    list-style: none;
+}
+
+.container{
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+
+    @media screen and (max-width: 640px) {
+        max-width: 80%;
+    }
+
+    @media screen and (max-width: 1023px) and (min-width: 641px) {
+        max-width: 90%;
+    }
 }

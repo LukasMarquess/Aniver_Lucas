@@ -1,0 +1,47 @@
+.hero{
+    padding-top: 64px;
+    padding-bottom: 100px;
+    background-image: url('../images/citynight.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+
+    .container{
+        position: relative;
+    }
+
+    &::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    &__text{
+        margin-bottom: 64px;
+        font-size: 40px;
+        line-height: 56px;
+        text-align: center;
+        font-weight: 800;
+    }
+
+    @media screen and (max-width: 640px) {
+        padding: 40px 0;
+        &__text{
+            font-size: 22px;
+            line-height: 24px;
+            margin-bottom: 30px;
+        }
+    }
+
+    @media screen and (max-width: 1023px) and (min-width: 641px) {
+        &__text{
+            font-size: 36px;
+            line-height: 52px;
+        }
+    }
+}

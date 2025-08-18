@@ -1,0 +1,40 @@
+.infos-bar{
+    padding: 16px 24px;
+    background-color: #fff;
+    max-width: 500px;
+    margin: 0 auto;
+
+    &__infos{
+        display: flex;
+        gap: 40px;
+        
+        &__item{
+            font-size: 14px;
+            color: #000;
+
+            b{
+                font-size: 18px;
+                display: block;
+                color: #000;
+                padding-bottom: 5px;
+            }
+        }
+    }
+
+    @media screen and (max-width: 640px) {
+        padding: 10px 10px;
+
+        &__infos{
+            display: block;
+            
+            &__item{
+                margin-bottom: 15px;
+            }
+
+            &__item:last-child{
+                margin-bottom: 0;
+            }
+        }
+
+    }
+}
