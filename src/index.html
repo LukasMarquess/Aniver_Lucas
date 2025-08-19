@@ -7,21 +7,22 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="./styles/main.scss">
 </head>
 <body>
     <header class="hero">
         <div class="container">
-            <p class="hero__text">O maior aniversário de todos os tempos! <br> 269d 7h 13m 58s</p>
+            <p class="hero__text">O maior aniversário de todos os tempos! <br> <span id="contador"></span></p>
             <div class="infos-bar">
             <ul class="infos-bar__infos">
                 <li class="infos-bar__infos__item">
                     <b>Localização</b>
-                    Av. dos ipês 754, Neópolis
+                    Casa de Lucas Sarmento
                 </li>
                 <li class="infos-bar__infos__item">
                     <b>Data</b>
-                    30 de Abril de 2023
+                    15 de maio de 2026
                 </li>
                 <li class="infos-bar__infos__item">
                     <b>Horário</b>
@@ -32,14 +33,33 @@
         </div>
     </header>
     <section class="event">
-        <div class="container">
+        <div class="container" data-aos="fade-down-right">
             <div class="event__details">
                 <h2>Detalhes do Evento</h2>
-                <P>Este é um evento especial para celebrar o aniversário de Lucas. Haverá comida, música e muita diversão! Além de claro Muita Heineken</P>
+                <P>Este é um evento especial para celebrar o aniversário de Lucas. Haverá comida, música e muita diversão! Além de claro Muita Heineken. Todos sem exceção irão ter que beber, é a regra! Aliás algumas regras serão ditas abaixo.</P>
             </div>
-            <img src="./images/balada.jpg" alt="Imagem de uma balada">
+            <img src="images/festaevangelion.jpg" alt="Imagem de uma balada">
         </div>
     </section>
+    <section class="event__rules">
+        <div class="container" data-aos="fade-down-left">
+            <h2>Regras do Evento</h2>
+            <ul class="event__rules__list">
+                <li class="event__rules__list__item">Todos devem trazer um presente para o Lucas.</li>
+                <li class="event__rules__list__item">Quem vai pagar a picanha é Pedro Lucas.</li>
+                <li class="event__rules__list__item">A única cerveja disponível será Heiniken e Skoll Beats.</li>
+                <li class="event__rules__list__item">Todos terão que escutar minhas músicas japonesas dos anos 80.</li>
+                <li class="event__rules__list__item">Todos devem ir caracterizados de batman.</li>
+                <li class="event__rules__list__item">Nesse dia também iremos assistir Neon Genesis Evangelion.</li>
+                <li class="event__rules__list__item">Sidney vai ter que me abraçar quando eu pedir.</li>
+                <li class="event__rules__list__item">Nada de ficar até as 22h ou ter que pedir a mulher, você vai JOÃO GUILHERME.</li>
+                <li class="event__rules__list__item">A exceção da fantasia é Anderson: Quero que você vá de Kuririn.</li>
+                <li class="event__rules__list__item">Esqueçi alguma coisa?</li>
+                <li class="event__rules__list__item">Divirtam-se e aproveitem a festa!</li>
+            </ul>
+        </div>
+    </section>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="./scripts/main.js"></script>
 </body>
 </html>

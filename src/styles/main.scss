@@ -1,5 +1,7 @@
 @use "hero";
 @use "components/infos_bar";
+@use "event";
+@use "rules";
 
 *{
     margin: 0;
